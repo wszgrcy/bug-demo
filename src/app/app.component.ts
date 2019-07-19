@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'demo';
+  val = Math.random()
+  constructor() {
+  }
+  test() {
+    this.val = Math.random();
+  }
 }
