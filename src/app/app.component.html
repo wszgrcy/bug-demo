@@ -1,7 +1,4 @@
-<app-c1 [aaaa]="val"></app-c1>
-<app-c2 [aaaa]="val"></app-c2>
-<button (click)="test()">
-    click to change val
-</button>
-
-<router-outlet></router-outlet>
+<ng-container *ngTemplateOutlet="name;context:test"></ng-container>
+<ng-template #name let-def let-a="a">
+    {{def}}{{a}}
+</ng-template>

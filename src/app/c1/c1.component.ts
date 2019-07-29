@@ -7,6 +7,7 @@ import { aa } from './class';
   inputs: ['aaaa']
 })
 export class C1Component extends aa implements OnInit {
+  
   constructor() { super() }
 
   ngOnInit() {
